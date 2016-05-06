@@ -17,7 +17,7 @@
  * under the License.
  */
 
-var events = [{slug: 'how to pass class', body: 'come to class'}];
+var events = [];
 
 var app = {
     // Application Constructor
@@ -58,7 +58,7 @@ var app = {
       var html = '';
 
       for(var i=0; i<events.length; i++){
-        html += '<div><h1>' + events[i].slug + '</h1>' + '<p>' + events[i].body + '</p><button data-id = "' + i + '" class = "edit" type="button">Edit</button><button data-id = "' + i + '" class = "delete" type = "button">Delete</button></div>';
+        html += '<div><h2>' + events[i].slug + '</h2>' + '<p>' + events[i].body + '</p><button data-id = "' + i + '" class = "delete" type = "button">Delete</button></div>';
       }
 
       containerElement.innerHTML = html;
@@ -67,6 +67,10 @@ var app = {
         var entryID = $(this).attr('data-id');
         events.splice(entryID, 1);
         app.render('container');
+      });
+
+      $(".edit").on('click', function(evt){
+
       });
 
         // var parentElement = document.getElementById(id);

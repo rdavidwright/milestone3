@@ -33,22 +33,35 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <title>Today I Learned</title>
+        <style>
+        h1 {text-align: center;}
+        </style>
     </head>
     <body>
-        <div class="app">
-            <div id="container">
-            </div>
-            <form>
-              Slug: <input id='slug' type='text'>
-              <br/>
-              Body: <input id='body' type='text'>
-              <br/>
-              <button id='submit'>Create</button>
-            </form>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+      <h1>Today I Learned</h1>
+      <nav>
+        <form>
+          Slug: <input id='slug' type='text'>
+          <br/>
+          Body: <input id='body' type='text'>
+          <br/>
+          <button id='submit'>Create</button>
+        </form>
+      </nav>
+      <div class="app">
+          <div id="container">
+          </div>
+          <!-- <form>
+            Slug: <input id='slug' type='text'>
+            <br/>
+            Body: <input id='body' type='text'>
+            <br/>
+            <button id='submit'>Create</button>
+          </form> -->
+      </div>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
